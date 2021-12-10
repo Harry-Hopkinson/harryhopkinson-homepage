@@ -1,7 +1,7 @@
 {
   "name": "harryhopkinson-homepage",
   "version": "1.0.0",
-  "description": "A homepage for all of my Coding Work",
+  "description": "Harry Hopkinson's Website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/Harry-Hopkinson/harryhopkinson-homepage.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Harry Hopkinson",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Harry-Hopkinson/harryhopkinson-homepage/issues"
   },
@@ -25,5 +25,9 @@
     "next": "^12.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "eslint-config-next": "^12.0.7",
+    "prettier": "^2.5.1"
   }
 }
