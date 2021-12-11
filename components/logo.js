@@ -19,4 +19,24 @@ padding: 10px;
 
 const Logo = () => {
     const codeImg = `/images/code${useColorModeValue('', '-dark')}.png`
+
+    return (
+        <Link href="/">
+            <a>
+                <LogoBox>
+                    <Image src={codeImg} width={32} height={32} alt="logo" />
+                    <Text
+                    color={useColorModeValue("gray.800", "whiteAlpha.900")}
+                    fontFamily='M PLUS Rounded 1c", sans-serif'
+                    fontWeight="bold"
+                    ml={3}
+                    >
+                        Harry Hopkinson
+                    </Text>
+                </LogoBox>
+            </a>
+        </Link>
+    )
 }
+
+export default Logo;
