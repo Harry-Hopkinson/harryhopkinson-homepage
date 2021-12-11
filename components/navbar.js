@@ -49,3 +49,5 @@ const Navbar = props => {
         </Box>
     )
 }
+
+export default Navbar
