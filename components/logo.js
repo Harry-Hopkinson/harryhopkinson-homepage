@@ -18,13 +18,13 @@ padding: 10px;
 `
 
 const Logo = () => {
-    const codeImg = `/images/code${useColorModeValue('', '-dark')}.png`
+    const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
 
     return (
         <Link href="/">
             <a>
                 <LogoBox>
-                    <Image src={codeImg} width={32} height={32} alt="logo" />
+                    <Image src={footPrintImg} width={32} height={32} alt="logo" />
                     <Text
                     color={useColorModeValue("gray.800", "whiteAlpha.900")}
                     fontFamily='M PLUS Rounded 1c", sans-serif'
