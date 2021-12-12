@@ -1,5 +1,6 @@
 # Harry Hopkinson's Homepage
 A homepage for all of my Coding Work and a Portfolio which will be updated reguarly.
+Works on all formats. Deployed by Vercel with regular builds.
 
 <a href="https://github.com/Harry-Hopkinson">
 	<img src= "https://images.weserv.nl/?url=avatars.githubusercontent.com/u/63599884?v=4&h=100&w=100&fit=cover&mask=circle&maxage=7d">
