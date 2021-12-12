@@ -10,6 +10,7 @@ A homepage for all of my Coding Work and a Portfolio which will be updated regua
 ```sh
 npm run dev
 echo http://localhost:3000/
+http://localhost:3000/
 ```
 
 ## Stack
