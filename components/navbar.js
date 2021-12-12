@@ -78,17 +78,34 @@ const Navbar = props => {
         <Box flex={1} align="right">
             <Box ml={2} display={{base: "inline-block", md: "none"}}>
                 <Menu>
-                    <MenuButton
-                        as={IconButton}
-                        icon={<HamburgerIcon />}
-                        variant="outline"
-                        aria-label="Options"
-                    />
-                </Menu>
-            </Box> 
-        </Box>    
-            </Container>
+                <MenuButton
+                    as={IconButton}
+                    icon={<HamburgerIcon />}
+                    variant="outline"
+                    aria-label="Options"
+              />
+              <MenuList>
+                <NextLink href="/" passHref>
+                  <MenuItem as={Link}>About</MenuItem>
+                </NextLink>
+                <NextLink href="/works" passHref>
+                  <MenuItem as={Link}>Works</MenuItem>
+                </NextLink>
+                <NextLink href="/posts" passHref>
+                  <MenuItem as={Link}>Posts</MenuItem>
+                </NextLink>
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/Harry-Hopkinson/harryhopkinson-homepage"
+                >
+                  View Source
+                  </MenuItem>
+              </MenuList>
+            </Menu>
+          </Box>
         </Box>
+      </Container>
+    </Box>
     )
 }
 
