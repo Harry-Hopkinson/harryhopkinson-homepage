@@ -1,9 +1,15 @@
-import { Container, Box, Heading, Image } from "@chakra-ui/react";
+import { Container, Button, Box, Heading, Image, useColorModeValue, Link } from "@chakra-ui/react";
+import Section from "../components/section";
+import Paragraph from "../components/paragraph";
+import NextLink from "next/link";
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import { BioSection, BioYear } from "../components/bio";
+
 const Page = () => {
     return (
         <Container>
-            <Box borderRadius="lg" bg="red" p={3} mb={6} align="center">
-                Hello I am a Student Programmer whom is in Secondary School.
+            <Box borderRadius="lg" bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")} p={3} mb={6} align="center">
+                Hello I'm a Student Programmer from England.
             </Box>
 
             <Box display={{md: "flex"}}>
@@ -27,8 +33,37 @@ const Page = () => {
                     src="/images/harry.PNG"
                     alt="Profile image"
                 />
+                </Box>
             </Box>
-            </Box>
+
+        <Section delay={0.1}>
+            <Heading as="h3" variant="section-title">
+                About Me
+            </Heading>
+            <Paragraph>Harry is a Junior Programmer from England who has a passion for the subject. 
+                He loves coding and has dabbled in all sorts of programming languages. 
+                His favourites are Python, Javascript/Typescript, Java and C#. 
+                Currently he is in education at Secondary School.
+                He is coding many projects which you can find on his Github.
+            </Paragraph>
+            <Box align="center" my={4}>
+          <NextLink href="/works">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My portfolio
+            </Button>
+          </NextLink>
+        </Box>       
+        </Section>
+
+        <Section delay={0.2}>
+            <Heading as="h3" variant="section-title">
+                Bio
+            </Heading>
+            <BioSection>
+                <BioYear>2006</BioYear>
+                Born near London, England
+            </BioSection>
+        </Section>    
         </Container>
     )
 }
