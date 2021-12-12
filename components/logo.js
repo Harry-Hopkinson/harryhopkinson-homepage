@@ -31,7 +31,7 @@ const Logo = () => {
                     fontWeight="bold"
                     ml={3}
                     >
-                        Harry Hopkinson
+                    Harry Hopkinson
                     </Text>
                 </LogoBox>
             </a>
