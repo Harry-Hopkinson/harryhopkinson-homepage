@@ -63,7 +63,36 @@ const Page = () => {
                 <BioYear>2006</BioYear>
                 Born near London, England
             </BioSection>
-        </Section>    
+            <BioSection>
+                <BioYear>2015</BioYear>
+                Started Programming in Scratch and building very basic games during Primary School.
+            </BioSection>
+            <BioSection>
+                <BioYear>2018</BioYear>
+                Programming in Python and started using Unity for Game Design.
+            </BioSection>
+            <BioSection>
+                <BioYear>2019</BioYear>
+                Advance programming in Python. Using as main language for my projects.
+            </BioSection>
+            <BioSection>
+                <BioYear>2020</BioYear>
+                Learnt Java and C# for building applications and more Game Design. Check out some of my old Unity Projects on my Github.
+                Released a game called SnowBallBrawl on Itch.io built using Unity.
+            </BioSection>
+            <BioSection>
+                <BioYear>2021</BioYear>
+                Website Development using Javascript, Typescript and multiple frameworks such as React. Multiple projects in Python.
+            </BioSection>
+        </Section>
+        <Section delay={0.3}>
+            <Heading as="h3" variant="section-title">
+            I ♥
+            </Heading>
+            <Paragraph>
+                Programming, Game Development, Software Development
+            </Paragraph>
+      </Section>
         </Container>
     )
 }
