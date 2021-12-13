@@ -40,7 +40,8 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
                 About Me
             </Heading>
-            <Paragraph>Harry is a Junior Programmer from England who has a passion for the subject. 
+            <Paragraph>
+                Harry is a Junior Programmer from England who has a passion for the subject. 
                 He loves coding and has dabbled in all sorts of programming languages. 
                 His favourites are Python, Javascript/Typescript, Java and C#. 
                 Currently he is in education at Secondary School.
