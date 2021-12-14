@@ -6,6 +6,7 @@ import { bookflix } from "../public/images/works/bookflix.png";
 import { kingfishercode } from "../public/images/works/kingfishercode.PNG";
 import { noteBookTODO } from "../public/images/works/notebookTODO.PNG";
 
+
 const Works = () => {
     return (
         <Container>
@@ -29,8 +30,8 @@ const Works = () => {
                     </WorkGridItem>
                 </Section>
                 <Section>
-                    <WorkGridItem id="notebookTODO" title="NoteBook TODO" thumbnail={noteBookTODO}>
-                        A Notebook to Store Ideas and Code Snippets.
+                    <WorkGridItem id="notebook-todo" title="NoteBook Todo" thumbnail={noteBookTODO}>
+                        A Notebook to Store Ideas and Code Snippets. Can Import Images and Graphs to Help Consolodate Knowledge.
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
