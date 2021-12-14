@@ -26,7 +26,6 @@ const Page = () => {
                     textAlign="center"
                 >
                 <Image
-                    borderStyle="solid"
                     maxWidth="100px"
                     display="inline-block"
                     borderRadius="full"

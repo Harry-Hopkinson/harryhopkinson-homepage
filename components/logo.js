@@ -24,14 +24,14 @@ const Logo = () => {
         <Link href="/">
             <a>
                 <LogoBox>
-                    <Image src={codingIcon} width={32} height={32} alt="logo" />
+                    <Image src={codingIcon} width={20} height={20} alt="logo" />
                     <Text
-                    color={useColorModeValue("gray.800", "whiteAlpha.900")}
-                    fontFamily='M PLUS Rounded 1c", sans-serif'
-                    fontWeight="bold"
-                    ml={3}
+                        color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+                        fontFamily='M PLUS Rounded 1c", sans-serif'
+                        fontWeight="bold"
+                        ml={3}
                     >
-                    Harry Hopkinson
+                        Harry Hopkinson
                     </Text>
                 </LogoBox>
             </a>

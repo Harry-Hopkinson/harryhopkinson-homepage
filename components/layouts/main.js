@@ -8,6 +8,7 @@ const Main = ({ children, router }) => {
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>Harry Hopkinson - HomePage</title>
+                <link rel="icon" href=".///public/images/harry.png"/>
             </Head>
 
             <Navbar path={router.asPath} />
