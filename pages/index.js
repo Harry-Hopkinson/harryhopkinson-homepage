@@ -1,52 +1,74 @@
-import { Container, Button, Box, Heading, Image, useColorModeValue, Link } from "@chakra-ui/react";
-import Section from "../components/section";
-import Paragraph from "../components/paragraph";
-import NextLink from "next/link";
-import { ChevronRightIcon } from "@chakra-ui/icons";
-import { BioSection, BioYear } from "../components/bio";
+import NextLink from 'next/link'
+import {
+  Link,
+  Container,
+  Heading,
+  Box,
+  Image,
+  SimpleGrid,
+  Button,
+  List,
+  ListItem,
+  Icon,
+  useColorModeValue
+} from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import Paragraph from '../components/paragraph'
+import { BioSection, BioYear } from '../components/bio'
+import Layout from '../components/layouts/article'
+import Section from '../components/section'
+import { GridItem } from '../components/grid-item'
+import { IoLogoGithub } from 'react-icons/io5'
 
-const Page = () => {
-    return (
-        <Container>
-            <Box borderRadius="lg" bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")} p={3} mb={6} align="center">
-                Hello I'm a Student Programmer from England.
-            </Box>
+const Home = () => (
+  <Layout>
+    <Container>
+      <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="center"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+      >
+        Hello, I&apos;m a developer based in England!
+      </Box>
 
-            <Box display={{md: "flex"}}>
-                <Box flexGrow={1}>
-                    <Heading as="h2" variant="page-title">
-                        Harry Hopkinson
-                    </Heading>
-                    <p>Programmer and Game Developer</p>
-                </Box>
-                <Box
-                    flexShrink={0}
-                    mt={{ base: 4, md: 0 }}
-                    ml={{ md: 6 }}
-                    textAlign="center"
-                >
-                <Image
-                    maxWidth="100px"
-                    display="inline-block"
-                    borderRadius="full"
-                    src="/images/harry.PNG"
-                    alt="Profile image"
-                />
-                </Box>
-            </Box>
+      <Box display={{ md: 'flex' }}>
+        <Box flexGrow={1}>
+          <Heading as="h2" variant="page-title">
+            Harry Hopkinson
+          </Heading>
+          <p>Software and Game Developer</p>
+        </Box>
+        <Box
+          flexShrink={0}
+          mt={{ base: 4, md: 0 }}
+          ml={{ md: 6 }}
+          textAlign="center"
+        >
+          <Image
+            borderStyle="solid"
+            maxWidth="100px"
+            display="inline-block"
+            borderRadius="full"
+            src="/images/harry.png"
+            alt="Profile image"
+          />
+        </Box>
+      </Box>
 
-        <Section delay={0.1}>
-            <Heading as="h3" variant="section-title">
-                About Me
-            </Heading>
-            <Paragraph>
-                Harry is a Junior Programmer from England who has a passion for the subject. 
-                He loves coding and has dabbled in all sorts of programming languages. 
-                His favourites are Python, Javascript/Typescript, Java and C#. 
-                Currently he is in education at Secondary School.
-                He is coding many projects which you can find on his Github.
-            </Paragraph>
-            <Box align="center" my={4}>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <Paragraph>
+            Harry is a Junior Programmer from England who has a passion for the subject. 
+            He loves coding and has dabbled in all sorts of programming languages. 
+            His favourites are Python, Javascript/Typescript, Java and C#. 
+            Currently he is in education at Secondary School.
+            He is coding many projects which you can find on his Github.
+        </Paragraph>
+        <Box align="center" my={4}>
           <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
@@ -84,17 +106,37 @@ const Page = () => {
                 <BioYear>2021</BioYear>
                 Website Development using Javascript, Typescript and multiple frameworks such as React. Multiple projects in Python.
             </BioSection>
-        </Section>
-        <Section delay={0.3}>
-            <Heading as="h3" variant="section-title">
-            I ♥
-            </Heading>
-            <Paragraph>
-                Programming, Game Development, Software Development
-            </Paragraph>
       </Section>
-        </Container>
-    )
-}
 
-export default Page;
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph>
+          Software, Web and Game Development...
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          On the web
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/Harry-Hopkinson" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                @Harry-Hopkinson
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
+      </Section>
+    </Container>
+  </Layout>
+)
+
+export default Home
