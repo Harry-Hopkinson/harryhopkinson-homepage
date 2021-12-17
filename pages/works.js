@@ -33,7 +33,7 @@ const Works = () => (
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="https://github.com/Harry-Hopkinson/BookFlix"
+            id="https://harry-hopkinson.github.io/BookFlix/"
             title="BookFlix"
             thumbnail={thumbBookFlix}
           >
