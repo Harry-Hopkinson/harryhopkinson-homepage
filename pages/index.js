@@ -71,7 +71,7 @@ const Home = () => (
         <Box align="center" my={4}>
           <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+              Works
             </Button>
           </NextLink>
         </Box>       
