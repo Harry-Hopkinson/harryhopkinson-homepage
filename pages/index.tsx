@@ -14,14 +14,14 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio.ts'
+import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoGithub } from 'react-icons/io5'
 
 const Home = () => (
-  <Layout>
+  <Layout title={undefined}>
     <Container>
       <Box
         borderRadius="lg"
@@ -140,4 +140,4 @@ const Home = () => (
 )
 
 export default Home
-export { getServerSideProps } from "../components/chakra.tsx"
+export { getServerSideProps } from "../components/chakra"
