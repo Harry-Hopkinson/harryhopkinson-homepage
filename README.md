@@ -9,6 +9,7 @@ Works on all formats. Deployed by Vercel with regular builds.
 <p></p>
 
 ```sh
+npm i
 npm run dev
 http://localhost:3000/
 ```
