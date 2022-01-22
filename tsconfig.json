@@ -19,7 +19,7 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["**/*.ts", "**/*.tsx","next-env.d.ts",],
+  "include": ["**/*.ts", "**/*.tsx","next-env.d.ts", "components/voxel-dog.js",],
   "exclude": [
     "node_modules"
   ],
