@@ -34,12 +34,11 @@ const VoxelDog = () => {
     }
   }, [renderer])
 
-  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
-    const { current: container } = refContainer
+    const { current: container } = refContainer;
     if (container && !renderer) {
-      const scW = container.clientWidth
-      const scH = container.clientHeight
+      const scW : any = container.clientWidth;
+      const scH : any = container.clientHeight;
 
       const renderer = new THREE.WebGLRenderer({
         antialias: true,
@@ -51,8 +50,6 @@ const VoxelDog = () => {
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 
-      // 640 -> 240
-      // 8   -> 6
       const scale = scH * 0.005 + 4.8
       const camera = new THREE.OrthographicCamera(
         -scale,
