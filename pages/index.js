@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { BioSection, BioYear } from '../components/bio.ts'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
@@ -140,4 +140,4 @@ const Home = () => (
 )
 
 export default Home
-export { getServerSideProps } from "../components/chakra"
+export { getServerSideProps } from "../components/chakra.tsx"
