@@ -67,7 +67,7 @@ const Home = () => (
           C#. Currently he is in education at Secondary School. He is coding
           many projects which you can find on his Github.
         </Paragraph>
-        <Box align="center" my={4}>
+        <Box my={4}>
           <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Works
