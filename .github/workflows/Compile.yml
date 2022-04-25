@@ -18,4 +18,5 @@ jobs:
       - name: Typescript Compiler
         run: |
           npm install -g yarn
+          yarn
           yarn build
