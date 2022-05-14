@@ -1,0 +1,6 @@
+tasks:
+  - init: yarn && yarn dev
+    command: yarn start
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint

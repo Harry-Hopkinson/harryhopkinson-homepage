@@ -108,13 +108,19 @@ const Home = () => (
           Website Development using Javascript, Typescript and multiple
           frameworks such as React. Multiple projects in Python.
         </BioSection>
+        <BioSection>
+          <BioYear>2022</BioYear>
+          Won the United Kingdom 🇬🇧 2022 Raspberry PI Competition. Contributed
+          to multiple large Github Codebases such as Prettier, VSCode, Lichess
+          and Spacedrive.
+        </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
-        <Paragraph>Software, Web and Game Development...</Paragraph>
+        <Paragraph>Software 💻, Web 🌐 and Game Development 🎮</Paragraph>
       </Section>
 
       <Section delay={0.3}>
