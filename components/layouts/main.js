@@ -1,8 +1,6 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import NavBar from "../navbar";
 import { Box, Container } from "@chakra-ui/react";
-import Footer from "../footer";
 
 const Main = ({ children, router }) => {
   return (
@@ -12,7 +10,11 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Harry's homepage" />
         <meta name="author" content="Harry Hopkinson" />
         <meta name="author" content="harry-hopkinson" />
-        <link rel="shortcut icon" href="/harry.PNG" type="image/x-icon" />
+        <link
+          rel="shortcut icon"
+          href="/images/computer.PNG"
+          type="image/x-icon"
+        />
         <title>Harry Hopkinson</title>
       </Head>
 
@@ -20,7 +22,6 @@ const Main = ({ children, router }) => {
 
       <Container maxW="container.md" pt={14}>
         {children}
-        <Footer />
       </Container>
     </Box>
   );

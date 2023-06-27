@@ -7,16 +7,8 @@ import {
   Stack,
   Heading,
   Flex,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
-import ThemeToggleButton from "./theme-toggle-button";
-import { IoLogoGithub } from "react-icons/io5";
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
   const active = path === href;
@@ -71,62 +63,16 @@ const Navbar = (props) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <LinkItem href="/about" path={path} _target={null}>
+            About Me
+          </LinkItem>
           <LinkItem href="/works" path={path} _target={null}>
-            Works
+            Projects
           </LinkItem>
-          <LinkItem
-            _target="_blank"
-            href="https://github.com/Harry-Hopkinson/harryhopkinson-homepage"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <IoLogoGithub />
-            Source
-          </LinkItem>
-          <LinkItem
-            _target="_blank"
-            href="https://harryhopkinson-blog.netlify.app/"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 5 }}
-            pl={2}
-          >
-            Blog
+          <LinkItem href="/open-source" path={path} _target={null}>
+            Open Source Contributions
           </LinkItem>
         </Stack>
-
-        <Box flex={1} alignItems={"center"}>
-          <ThemeToggleButton />
-
-          <Box ml={2} display={{ base: "inline-block", md: "none" }}>
-            <Menu isLazy id="navbar-menu">
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
-              <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/Harry-Hopkinson/harryhopkinson-homepage"
-                >
-                  View Source
-                </MenuItem>
-              </MenuList>
-            </Menu>
-          </Box>
-        </Box>
       </Container>
     </Box>
   );
